@@ -3,7 +3,7 @@ function mergeSort(array) {
   if (array.length < 2)
     return array
   // Split array in two
-  let half = Math.ceil(array.length / 2)
+  let half = Math.floor(array.length / 2)
   let leftArray = array.slice(0, half)
   let rightArray = array.slice(half)
   // Recursively split each half
